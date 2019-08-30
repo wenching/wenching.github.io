@@ -1,0 +1,577 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Resume},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{Resume}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{true}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+    \date{}
+    \predate{}\postdate{}
+  
+\usepackage[slantfont,boldfont,CJKnumber]{xeCJK}
+\usepackage{lscape}
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+%\setCJKmainfont{Microsoft YaHei UI}
+%\setCJKsansfont{Microsoft YaHei UI}
+%\setCJKmonofont{Microsoft YaHei UI}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage[table]{xcolor}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+\begin{itemize}
+\tightlist
+\item
+  WHO ARE YOU
+\end{itemize}
+\end{abstract}
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\newpage
+
+\section{RESEARCH HIGHLIGHTS}\label{research-highlights}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\subsection{FY19}\label{fy19}
+
+\begin{itemize}
+\tightlist
+\item
+  CRI-BIO-448/480
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Project title
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Meis Proteins identify genes associated with Prostate Cancer
+      Progression (Meis in Prostate Cancer Progression)
+    \end{itemize}
+  \item
+    PI/Client
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://pathology.uic.edu/directory/donald-j-vander-griend-phd/}{Donald
+      Vander Griend}, Assistant Professor, Director of Urological
+      Research,
+      \href{mailto:dvanderg@surgery.bsd.uchicago.edu}{\nolinkurl{dvanderg@surgery.bsd.uchicago.edu}}
+    \end{itemize}
+  \item
+    Department
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Surgery
+    \end{itemize}
+  \item
+    Short project description/Bioinformatics analysis goals/Assistance
+    provided:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Given that MEIS proteins have been found to be prognostic in
+      Prostate cancer (PCs), this study focuses on exploring the
+      functional and predictive role of changes in MEIS expression
+      associated with prostate tumor progression. A sophisticated
+      analysis of RNA-seq dataset of primary prostate tumor samples was
+      performed. All samples were first stratified into two groups high
+      and low based on MEIS1/MEIS2 expressions. A meta-comparison of
+      identifying MEIS associated genes involved in cancer progression
+      was followed based on differentially expressed genes between these
+      two groups. Coupling with further analyses based on RNA-seq
+      results, our results demonstrate a stepwise decrease in the
+      expression of both MEIS1 and MEIS2 from benign epithelia, to the
+      primary tumor, to metastatic tissues. The work was published in a
+      high-impact journal \textbf{\emph{Clinical Cancer Research}} (2017
+      IF: 10.199) in 2019.
+    \end{itemize}
+  \item
+    Results:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      The paper was published as follows;
+    \item
+      Bhanvadia, R.R., VanOpstall, C., Brechka, H., Barashi, N.S.,
+      Gillard, M., McAuley, E.M., Apiz, J., Paner, G.P., \textbf{Chan,
+      W.-C.}, Andrade, J., et al. (2018). MEIS1 and MEIS2 Expression and
+      Prostate Cancer Progression: A Role For HOXB13 Binding Partners in
+      Metastatic Disease. Clin. Cancer Res. (2017 IF: 10.199)
+    \end{itemize}
+  \end{itemize}
+\item
+  CRI-BIO-576
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Project title
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Uncovering the genetic and functional identity of leukemia stem
+      cells (Zebrafish T-ALL LSCs)
+    \end{itemize}
+  \item
+    PI/Client
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://www.uchicagomedicine.org/find-a-physician/physician/jill-de-jong}{Jill
+      de Jong}, Assistant Professor,
+      \href{mailto:jdejong@peds.bsd.uchicago.edu}{\nolinkurl{jdejong@peds.bsd.uchicago.edu}}
+    \end{itemize}
+  \item
+    Department
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Pediatrics
+    \end{itemize}
+  \item
+    Short project description/Bioinformatics analysis goals/Assistance
+    provided:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      In this study, the ``side population assay'' (enriches for
+      Leukemia Stem Cells (LSCs)) was utilized to sort cells from
+      zebrafish T-ALLs and run a high-throughput transcriptome profiling
+      application (i.e., RNA sequencing) on the ``side population'' and
+      the ``main population''. The null hypothesis was to identify LSC
+      associated genes and pathways that may be driving LSC activity. In
+      order to achieve this goal, a computational comparison between the
+      gene expression profiles of the two groups was performed. A
+      comprehensive, computational analysis of RNA-seq dataset was
+      conducted, including quality assessment, tag alignment,
+      transcriptional quantification, differential expression analysis,
+      functional enrichment analysis, and data visualization. Overall,
+      our results demonstrate that the side population in zebrafish
+      acute lymphoblastic leukemia significantly enriches for leukemia
+      propagating cells and identifies the Wnt-pathway as a likely
+      genetic driver of leukemia stem cell fate. The work was published
+      in a high-impact journal \textbf{\emph{Haematologica}} (2017 IF:
+      9.09) in 2019.
+    \end{itemize}
+  \item
+    Results:
+
+    \begin{itemize}
+    \tightlist
+    \item
+      The paper was published as follows;
+    \item
+      Baeten, J.T., Waarts, M.R., Pruitt, M.M., \textbf{Chan, W.-C.},
+      Andrade, J., and Jong, J.L.O. de (2019). The side population
+      enriches for leukemia propagating cell activity and Wnt pathway
+      expression in zebrafish acute lymphoblastic leukemia.
+      Haematologica haematol.2018.206417.
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\section{ROAD MAP}\label{road-map}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  2015.10 \textasciitilde{} present
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Bioinformatician II, Center for Research Informatics, University of
+    Chicago, USA
+  \item
+    Publications
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Baeten, J.T., Waarts, M.R., Pruitt, M.M., \textbf{Chan, W.-C.},
+      Andrade, J., and Jong, J.L.O. de (2019). The side population
+      enriches for leukemia propagating cell activity and Wnt pathway
+      expression in zebrafish acute lymphoblastic leukemia.
+      Haematologica haematol.2018.206417. (2017 IF: 9.09)
+    \item
+      Kline, D.E., MacNabb, B.W., Chen, X., \textbf{Chan, W.-C.}, Fosco,
+      D., and Kline, J. (2018). CD8\(\alpha\)+ Dendritic Cells Dictate
+      Leukemia-Specific CD8+ T Cell Fates. The Journal of Immunology
+      ji1801184. (2017 IF: 4.539)
+    \item
+      Bhanvadia, R.R., VanOpstall, C., Brechka, H., Barashi, N.S.,
+      Gillard, M., McAuley, E.M., Apiz, J., Paner, G.P., \textbf{Chan,
+      W.-C.}, Andrade, J., et al. (2018). MEIS1 and MEIS2 Expression and
+      Prostate Cancer Progression: A Role For HOXB13 Binding Partners in
+      Metastatic Disease. Clin. Cancer Res. (2017 IF: 10.199)
+    \item
+      Wang, L.-J., \textbf{Chan, W.-C.}, Chou, M.-C., Chou, W.-J., Lee,
+      M.-J., Lee, S.-Y., Lin, P.-Y., Yang, Y.-H., and Yen, C.-F. (2017).
+      Polymorphisms of STS gene and SULT2A1 gene and neurosteroid levels
+      in Han Chinese boys with attention-deficit/hyperactivity disorder:
+      an exploratory investigation. Sci Rep 7, 45595. (2017 IF: 4.122)
+    \item
+      Kach, J., Long, T.M., Selman, P., Tonsing-Carter, E.Y., Bacalao,
+      M.A., Lastra, R.R., Wet, L. de, Comiskey, S., Gillard, M.,
+      VanOpstall, C., West D.C., \textbf{Chan, W.-C.}, et al. (2017).
+      Selective Glucocorticoid Receptor Modulators (SGRMs) Delay
+      Castrate-Resistant Prostate Cancer Growth. Mol Cancer Ther 16,
+      1680--1692. (2017 IF: 5.365)
+    \end{itemize}
+  \item
+    Seminar Series
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://goo.gl/Nhq4oW}{Genomics Data Visualization}
+    \end{itemize}
+  \item
+    Internal Project - RNA-seq Pipeline implementing using Python, R,
+    and BigDataScript
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://github.com/wenching/cri_rnaseq_2018/tree/master/docs}{2018
+      CRI RNA-seq Pipeline}
+    \end{itemize}
+  \end{itemize}
+\item
+  2015.01 \textasciitilde{} 2015.09
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Senior Postdoctoral Fellow, Department of Medical Research,
+    Kaohsiung Chang Gung Memorial Hospital, Taiwan
+  \item
+    Publications
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Li, S.-C., \textbf{Chan, W.-C.}, Huang, Y.-H., Guo, M.M.-H., Yu,
+      H.-R., Huang, F.-C., Kuo, H.-C., and Kuo, H.-C. (2016). Major
+      methylation alterations on the CpG markers of inflammatory immune
+      associated genes after IVIG treatment in Kawasaki disease. BMC Med
+      Genomics 9.
+    \item
+      Kuo, H.-C., Li, S.-C., Guo, M.M.-H., Huang, Y.-H., Yu, H.-R.,
+      Huang, F.-C., Jiao, F., Kuo, H.-C., Andrade, J., and \textbf{Chan,
+      W.-C.} (2016). Genome-Wide Association Study Identifies Novel
+      Susceptibility Genes Associated with Coronary Artery Aneurysm
+      Formation in Kawasaki Disease. PLOS ONE 11, e0154943.
+    \item
+      Kuo, H.-C., Hsieh, K.-S., Ming-Huey Guo, M., Weng, K.-P., Ger,
+      L.-P., \textbf{Chan, W.-C.}, and Li, S.-C. (2016). Next-generation
+      sequencing identifies micro-RNA--based biomarker panel for
+      Kawasaki disease. Journal of Allergy and Clinical Immunology 138,
+      1227--1230.
+    \end{itemize}
+  \item
+    Awards
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://innoaward.taiwan-healthcare.org/AwardDetail.php?REFDOCTYPID=0nimiycqow7g4bru\&NumID=0oixv0ge1k07vc47\&REFDOCID=0oj6w0yr9wyk0k5c}{The
+      13th National Innovation Award} \&
+      \href{IMG/2016NationalInnovationAwardCertificate.png}{Certificate}
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+\protect\hyperlink{Top}{Top}
+
+\newpage
+
+\section{PREPARATION}\label{preparation}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Introduction
+
+  \begin{itemize}
+  \tightlist
+  \item
+    10+ years research experience, broad scientific knowledge with solid
+    publications.
+  \item
+    Expert in Next Generation Sequencing. Versed in Linux Operation
+    System and HPC
+  \item
+    Competent in Shell, Python, Git, Docker and Common Workflow Language
+    (CWL)/Workflow Definition Language (WDL) 
+  \item
+    Good oral and written communication skills, work well in a
+    collaborative fast-paced team
+  \item
+    Experience developing and applying open practices to data-driven
+    research
+  \end{itemize}
+\item
+  Self links
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://www.linkedin.com/in/wen-ching-chan-350ab654/}{Linkdin}
+  \item
+    \href{https://scholar.google.com/citations?user=rE6CbgIAAAAJ}{Google
+    Scholar Citations}
+  \item
+    \href{https://www.researchgate.net/profile/Wen-Ching_Chan/}{ResearchGate}
+  \item
+    \href{http://orcid.org/0000-0003-0034-7277}{OCRID}
+  \item
+    \href{http://cri.uchicago.edu/people/\#chan}{CRI}
+  \end{itemize}
+\item
+  Online Programming Learning Platform
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://leetcode.com/}{LeetCode}
+  \end{itemize}
+\item
+  Questions
+
+  \begin{itemize}
+  \tightlist
+  \item
+    HR phone interview
+  \item
+    behavioral questions
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \href{https://www.thebalancecareers.com/behavioral-job-interview-questions-2059620}{Behavioral
+      Based Job Interview Questions}
+    \item
+      Your response will reveal your skills, abilities, and personality.
+    \end{itemize}
+  \item
+    \href{https://www.thebalancecareers.com/how-to-answer-interview-questions-without-a-right-answer-2060972}{How
+    to Answer Interview Questions Without a Right Answer}
+  \item
+    coding / tecnhical phone interview
+  \item
+    onsite interview
+  \end{itemize}
+\item
+  Referees
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Illumina \textbar{} \href{https://www.abbvie.com}{AbbVie}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Zing Tsai
+    \end{itemize}
+  \item
+    \href{https://www.natera.com}{Natera}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Hsin-Ta Wu
+    \end{itemize}
+  \item
+    \href{dnanexus\%20careers}{DNAnexus}
+  \end{itemize}
+\item
+  Salary
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Mid-west 90K = South CA 120K = Bay Area 150K
+  \end{itemize}
+\item
+  Others' Experience
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Zing Tsai \textbar{}
+    \href{https://www.facebook.com/zing119/posts/10218525777038215?comment_id=10218527415639179\&notif_id=1542554199519979\&notif_t=feed_comment}{FB}
+    \textbar{}
+    \href{https://www.ptt.cc/bbs/Oversea_Job/M.1542533147.A.38E.html?fbclid=IwAR0UAqswv_7bzH-L_lW1Cj6HP8rj6xbMrWchpKrBFNan1VKHeIZWZEdiYuQ}{PTT}
+  \end{itemize}
+\end{itemize}
+
+\protect\hyperlink{Top}{Top}
+
+\section{JOB INTERVIEWS}\label{job-interviews}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  2019
+\end{itemize}
+
+\protect\hyperlink{Top}{Top}
+
+\section{SESSION INFORMATION}\label{session-information}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\begin{verbatim}
+## R version 3.5.2 (2018-12-20)
+## Platform: x86_64-apple-darwin15.6.0 (64-bit)
+## Running under: macOS High Sierra 10.13.6
+## 
+## Matrix products: default
+## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## 
+## locale:
+## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+## 
+## attached base packages:
+## [1] grid      stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+## [1] captioner_2.2.3.9000 dplyr_0.8.0          png_0.1-7           
+## [4] kableExtra_0.9.0     knitr_1.21          
+## 
+## loaded via a namespace (and not attached):
+##  [1] Rcpp_1.0.0          rstudioapi_0.9.0    xml2_1.2.0         
+##  [4] magrittr_1.5.0.9000 hms_0.4.2           tidyselect_0.2.5   
+##  [7] rvest_0.3.2         munsell_0.5.0       viridisLite_0.3.0  
+## [10] colorspace_1.4-0    R6_2.4.0            rlang_0.3.1        
+## [13] stringr_1.4.0       httr_1.4.0          tools_3.5.2        
+## [16] xfun_0.5            htmltools_0.3.6     assertthat_0.2.0   
+## [19] yaml_2.2.0          digest_0.6.18       tibble_2.0.1.9001  
+## [22] crayon_1.3.4        purrr_0.3.0         readr_1.2.1        
+## [25] glue_1.3.0          evaluate_0.13       rmarkdown_1.11     
+## [28] stringi_1.3.1       compiler_3.5.2      pillar_1.3.1       
+## [31] scales_1.0.0        pkgconfig_2.0.2
+\end{verbatim}
+
+\protect\hyperlink{Top}{Top}
+
+\section{REFERENCES}\label{references}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+
+\end{document}
