@@ -115,8 +115,10 @@ This is a public repository for my simple resume at [wenching.github.io](https:/
 
 ***
 
-- 2015.10 ~ present
-    - Bioinformatician II, Center for Research Informatics, University of Chicago, USA
+- 2019.11 ~ present
+    - Lead Bioinformatics Scientist, Natera, CA, USA
+- 2015.10 ~ 2019.10
+    - Bioinformatician II, Center for Research Informatics, University of Chicago, IL, USA
     - Publications
         - Domowicz, M., **`Chan, W.-C.`**, Claudio-Vázquez, P., Henry, J., Ware, C., Andrade, J., Dawson, G., and Schwartz, N. Global brain transcriptome analysis of a Tpp1 Neuronal Ceroid Lipofuscinoses Mouse Model. ASN Neuro. 2019 doi: 10.1177/1759091419843393. (2017 IF: 3.617) [@domowicz_global_2019]
         - Baeten, J.T., Waarts, M.R., Pruitt, M.M., **`Chan, W.-C.`**, Andrade, J., and Jong, J.L.O. de (2019). The side population enriches for leukemia propagating cell activity and Wnt pathway expression in zebrafish acute lymphoblastic leukemia. Haematologica haematol.2018.206417. (2017 IF: 9.09) [@baeten_side_2019]
