@@ -13,4 +13,4 @@ Calvin's scripts for Git
 	
     * COPY GitToolkit/*.sh (might also REPOS.Rmd and .gitignore) TO THE REPOS  
   
-Calvin  
+Calvin
